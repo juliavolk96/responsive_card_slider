@@ -1,98 +1,122 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character Card Slider | The Apothecary Diaries</title>
+  <meta name="description" content="Detailed character profiles from The Apothecary Diaries in an interactive slider.">
   <link rel="stylesheet" href="./css/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-  <title>Card Slider</title>
 </head>
 <body>
-  <section class="slide-container swiper">
-    <div class="slide-content">
-      <div class="card-wrapper swiper-wrapper">
-        <article class="card swiper-slide">
-          <div class="card__image-content">
-            <span class="card__overlay"></span>
-            <div class="card__image-wrapper">
-              <img src="./images/profile1.jpg" alt="Jinshi potrait" class="card__img">
+  <main>
+    <section class="slide-container swiper" aria-label="Character Profile Slider">
+
+      <div class="slide-content js-swiper-main">
+        <div class="card-wrapper swiper-wrapper">
+
+          <article class="card swiper-slide">
+            <div class="card__image-content">
+              <span class="card__overlay"></span>
+              <div class="card__image-wrapper">
+                <img src="./images/profile1.jpg" alt="Portrait of Jinshi" class="card__img" loading="lazy">
+              </div>
             </div>
-          </div>
 
-          <div class="card__content">
-            <h2 class="card__name">Jinshi</h2>
-            <p class="card__description">A high-ranking and extraordinarily beautiful eunuch who manages the Inner Court. Possessing a sharp mind and hidden ambitions, his true identity is shrouded in mystery. Beneath his flawless exterior lies a man genuinely intrigued by Maomao's unique talents.</p>
-            <a href="#" class="card__button">Read More</a>
-          </div>
-        </article>
-
-        <article class="card swiper-slide">
-          <div class="card__image-content">
-            <span class="card__overlay"></span>
-            <div class="card__image-wrapper">
-              <img src="./images/profile2.jpg" alt="Lishu potrait" class="card__img">
+            <div class="card__content">
+              <h2 class="card__name">Jinshi</h2>
+              <p class="card__description">
+                A high-ranking and extraordinarily beautiful eunuch who manages the Inner Court.
+                Possessing a sharp mind and hidden ambitions, his true identity is shrouded in mystery.
+              </p>
+              <a href="#" class="card__button">Read More</a>
             </div>
-          </div>
+          </article>
 
-          <div class="card__content">
-            <h2 class="card__name">Lishu</h2>
-            <p class="card__description">The young and timid Virtuous Consort of the Crystal Pavilion. Despite her high status, she is often misunderstood due to her childish appearance and severe food allergies, making her a target for palace bullying.</p>
-            <a href="#" class="card__button">Read More</a>
-          </div>
-        </article>
-
-        <article class="card swiper-slide">
-          <div class="card__image-content">
-            <span class="card__overlay"></span>
-            <div class="card__image-wrapper">
-              <img src="./images/profile3.jpg" alt="Xiaolan potrait" class="card__img">
+          <article class="card swiper-slide">
+            <div class="card__image-content">
+              <span class="card__overlay"></span>
+              <div class="card__image-wrapper">
+                <img src="./images/profile2.jpg" alt="Portrait of Lishu" class="card__img" loading="lazy">
+              </div>
             </div>
-          </div>
 
-          <div class="card__content">
-            <h2 class="card__name">Xiaolan</h2>
-            <p class="card__description">A hardworking maidservant who works in the palace's laundry and bathhouse areas. She is Maomao's most reliable source of information, always aware of the latest rumors spreading among the lower-ranking servants.</p>
-            <a href="#" class="card__button">Read More</a>
-          </div>
-        </article>
-
-        <article class="card swiper-slide">
-          <div class="card__image-content">
-            <span class="card__overlay"></span>
-            <div class="card__image-wrapper">
-              <img src="./images/profile4.jpg" alt="Maomao potrait" class="card__img">
+            <div class="card__content">
+              <h2 class="card__name">Lishu</h2>
+              <p class="card__description">
+                The young and timid Virtuous Consort of the Crystal Pavilion. Despite her high status,
+                she is often misunderstood due to her severe food allergies.
+              </p>
+              <a href="#" class="card__button">Read More</a>
             </div>
-          </div>
+          </article>
 
-          <div class="card__content">
-            <h2 class="card__name">Maomao</h2>
-            <p class="card__description">The pragmatic daughter of an apothecary from the Pleasure District. She uses her vast knowledge of poisons and medicine to solve palace mysteries while trying her best to avoid the spotlight of court politics.</p>
-            <a href="#" class="card__button">Read More</a>
-          </div>
-        </article>
-
-        <article class="card swiper-slide">
-          <div class="card__image-content">
-            <span class="card__overlay"></span>
-            <div class="card__image-wrapper">
-              <img src="./images/profile5.jpg" alt="Jinshi potrait" class="card__img">
+          <article class="card swiper-slide">
+            <div class="card__image-content">
+              <span class="card__overlay"></span>
+              <div class="card__image-wrapper">
+                <img src="./images/profile3.jpg" alt="Portrait of Xiaolan" class="card__img" loading="lazy">
+              </div>
             </div>
-          </div>
 
-          <div class="card__content">
-            <h2 class="card__name">Gyokuyou</h2>
-            <p class="card__description">One of the Emperor's favored high-ranking consorts. She is a wise and compassionate woman who recognizes Maomao's genius and enlists her help to protect her household in the Jade Pavilion.</p>
-            <a href="#" class="card__button">Read More</a>
-          </div>
-        </article>
+            <div class="card__content">
+              <h2 class="card__name">Xiaolan</h2>
+              <p class="card__description">
+                A hardworking maidservant who works in the palace's laundry. She is Maomao's
+                most reliable source of information and rumors among servants.
+              </p>
+              <a href="#" class="card__button">Read More</a>
+            </div>
+          </article>
+
+          <article class="card swiper-slide">
+            <div class="card__image-content">
+              <span class="card__overlay"></span>
+              <div class="card__image-wrapper">
+                <img src="./images/profile4.jpg" alt="Portrait of Maomao" class="card__img" loading="lazy">
+              </div>
+            </div>
+
+            <div class="card__content">
+              <h2 class="card__name">Maomao</h2>
+              <p class="card__description">
+                The pragmatic daughter of an apothecary. She uses her vast knowledge of poisons
+                to solve palace mysteries while avoiding court politics.
+              </p>
+              <a href="#" class="card__button">Read More</a>
+            </div>
+          </article>
+
+          <article class="card swiper-slide">
+            <div class="card__image-content">
+              <span class="card__overlay"></span>
+              <div class="card__image-wrapper">
+                <img src="./images/profile5.jpg" alt="Portrait of Gyokuyou" class="card__img" loading="lazy">
+              </div>
+            </div>
+
+            <div class="card__content">
+              <h2 class="card__name">Gyokuyou</h2>
+              <p class="card__description">
+                One of the Emperor's favored high-ranking consorts. A wise woman who
+                recognizes Maomao's genius and enlists her help in the Jade Pavilion.
+              </p>
+              <a href="#" class="card__button">Read More</a>
+            </div>
+          </article>
+
         </div>
-    </div>
+      </div>
 
-    <div class="swiper-button-next swiper-navBtn"></div>
-    <div class="swiper-button-prev swiper-navBtn"></div>
-    <div class="swiper-pagination"></div>
-  </section>
+      <div class="swiper-button-next swiper-navBtn" role="button" aria-label="Next slide"></div>
+      <div class="swiper-button-prev swiper-navBtn" role="button" aria-label="Previous slide"></div>
+
+      <div class="swiper-pagination"></div>
+    </section>
+  </main>
 
   <script src="./js/swiper-bundle.min.js"></script>
   <script src="./js/script.js"></script>
